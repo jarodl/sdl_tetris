@@ -1,8 +1,8 @@
 #ifndef IO_H
 #define IO_H
 
-#include "SDL.h"
 #include <iostream>
+#include <SDL/SDL.h>
 
 class IO
 {
@@ -18,7 +18,6 @@ public:
 
 	int pollKey();
 	int getKey();
-	int isKeyDown( int key );
 	
 private:
 	int initGraphics();

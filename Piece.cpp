@@ -27,7 +27,7 @@ void Piece::copy( const Piece & from, Piece & to )
 void Piece::resize( int rows, int cols )
 {
 	squares.resize(rows);
-	for ( int i = 0; i < squares.size(); i++)
+	for ( int i = 0; i < (int)squares.size(); i++)
 		squares[i].resize(cols);
 }
 
@@ -68,15 +68,15 @@ const char Piece::getValue(int x, int y) const
 
 void Piece::empty()
 {
-	for ( int i = 0; i < squares.size(); i++ )
-		for ( int j = 0; j < squares[0].size(); j++ )
+	for ( int i = 0; i < (int)squares.size(); i++ )
+		for ( int j = 0; j < (int)squares[0].size(); j++ )
 			squares[i][j] = SQR_EMPTY;
 }
 
 void Piece::fill(char fill)
 {
-	for ( int i = 0; i < squares.size(); i++ )
-		for ( int j = 0; j < squares[0].size(); j++ )
+	for ( int i = 0; i < (int)squares.size(); i++ )
+		for ( int j = 0; j < (int)squares[0].size(); j++ )
 			squares[i][j] = fill;
 }
 

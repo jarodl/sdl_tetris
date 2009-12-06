@@ -26,8 +26,9 @@ void Game::startGame()
 {
 	unsigned long startTime = SDL_GetTicks();
 	Piece tmpPiece;
+    bool playing = true;
 
-	while ( !io->isKeyDown(SDLK_ESCAPE) )
+	while (playing)
 	{
 		io->clearScreen();
 		drawScene();
@@ -48,21 +49,20 @@ void Game::startGame()
 			break;
 
 		case (SDLK_DOWN):
-			if ( board->isPossibleMove(cur_x, cur_y + 1, curPiece) )
-				cur_y += 1;
-			break;
-
-		case (SDLK_x):
 			while ( board->isPossibleMove(cur_x, cur_y + 1, curPiece) )
 				cur_y += 1;
 			break;
 
-		case (SDLK_z):
+		case (SDLK_SPACE):
 			tmpPiece = curPiece;
 			tmpPiece.rotate();
 			if ( board->isPossibleMove(cur_x, cur_y, tmpPiece) )
 				curPiece.rotate();
 			break;
+
+        case (SDLK_ESCAPE):
+            playing = false;
+            break;
 		}
 		
 		unsigned long endTime = SDL_GetTicks();

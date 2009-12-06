@@ -66,17 +66,6 @@ int IO::getKey()
 	return event.key.keysym.sym;
 }
 
-int IO::isKeyDown( int key )
-{
-	Uint8* mKeytable;
-	int mNumkeys;
-
-	SDL_PumpEvents();
-	mKeytable = SDL_GetKeyState(&mNumkeys);
-
-	return mKeytable[key];
-}
-
 // private
 int IO::initGraphics()
 {

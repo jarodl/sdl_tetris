@@ -1,5 +1,5 @@
-#ifndef BOARD_H
-#define BOARD_H
+#ifndef BOARD_CLASS_H
+#define BOARD_CLASS_H
 
 #include "Pieces.h"
 
