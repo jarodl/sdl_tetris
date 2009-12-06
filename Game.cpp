@@ -60,9 +60,9 @@ void Game::startGame()
 				curPiece.rotate();
 			break;
 
-        case (SDLK_ESCAPE):
-            playing = false;
-            break;
+               case (SDLK_ESCAPE):
+                        playing = false;
+                        break;
 		}
 		
 		unsigned long endTime = SDL_GetTicks();
