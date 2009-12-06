@@ -1,0 +1,21 @@
+h1. sdl_tetris
+
+<code>
+make
+./tetris
+</code>
+
+p. and play some tetris!
+
+p. This
+"tutorial":http://gametuto.com/tetris-tutorial-in-c-render-independent/
+helped out in the beginning but I ended up doing things completely
+different.
+
+h2. todo
+
+* add color and better graphics
+* add sound
+* implement points system and levels
+* the ability to pause the game
+* menu system/high scores
