@@ -1,7 +1,7 @@
 h1. sdl_tetris
 
 pre. make
-pre. ./tetris
+./tetris
 
 p. and play some tetris!
 
