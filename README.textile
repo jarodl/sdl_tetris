@@ -1,16 +1,11 @@
 h1. sdl_tetris
 
-<code>
-make
-./tetris
-</code>
+pre. make
+pre. ./tetris
 
 p. and play some tetris!
 
-p. This
-"tutorial":http://gametuto.com/tetris-tutorial-in-c-render-independent/
-helped out in the beginning but I ended up doing things completely
-different.
+p. This "tutorial":http://gametuto.com/tetris-tutorial-in-c-render-independent/ helped out in the beginning but I ended up doing things completely different.
 
 h2. todo
 
